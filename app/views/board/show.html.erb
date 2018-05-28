@@ -1,0 +1,11 @@
+<div class="container">
+ <h1>게시글</h1>
+    번호 : <%= @show_post.id %> <br>
+    제목:<%=@show_post.title%><br>
+    작성자:<%= @show_post.editor %> <br>
+    컨텐츠:<%= @show_post.content %> <br>
+    
+    <a href="/board/edit/<%= @show_post.id %>">[수정]</a>
+    <a href="/board/delete/<%= @show_post.id %>">[삭제]</a>
+    <hr>
+</div>
